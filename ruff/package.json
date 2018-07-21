@@ -1,0 +1,17 @@
+{
+    "name": "ruff",
+    "version": "0.1.0",
+    "description": "",
+    "author": "",
+    "main": "src/index.js",
+    "ruff": {
+        "dependencies": {
+            "ky-016": "^2.0.5",
+            "dht11": "^0.3.6"
+        },
+        "version": 1
+    },
+    "dependencies": {
+        "request": "^2.87.0"
+    }
+}

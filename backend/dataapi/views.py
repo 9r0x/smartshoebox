@@ -16,6 +16,7 @@ def data_list(request):
         return JsonResponse(serializer.data, safe=False)
 
     elif request.method == 'POST':
+        print(request.body)
         data = JSONParser().parse(request)
         serializer = DataSerializer(data=data)
         if serializer.is_valid():
