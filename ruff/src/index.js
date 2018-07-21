@@ -26,6 +26,7 @@ function postState(state) {
 
 $.ready(function (error) {
     var state = { humidity: 0, temperature: 0 }
+    $('#LED').turnOn();
     setInterval(function(){
         $('#HTSensor').getTemperature(function (error, temperature) {
             state.temperature = temperature

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Shoe from './Shoe';
 import { Row } from 'antd';
+import ShoeStat from './ShoeStat';
 
 class Shoes extends Component {
 
@@ -15,6 +16,7 @@ class Shoes extends Component {
         return (
               <Row gutter={16}>
                 {Shoetable}
+                <ShoeStat updatingShoe={this.props.updatingShoe}/>
               </Row>
         );
     }
